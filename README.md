@@ -1,11 +1,11 @@
-About nifti-mrs
-===============
+About nifti-mrs-feedstock
+=========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/nifti-mrs-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/wtclarke/nifti_mrs_tools
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/nifti-mrs-feedstock/blob/main/LICENSE.txt)
 
 Summary: Software tools for the NIfTI-MRS data format
 
