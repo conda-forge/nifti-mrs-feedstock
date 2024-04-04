@@ -1,5 +1,5 @@
 {% set name = "nifti-mrs" %}
-{% set version = "1.2.0" %}
+{% set version = "1.2.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/nifti_mrs-{{ version }}.tar.gz
-  sha256: 82891493b9b993c6d5031f968bce639aa710492b53886908807ee0136394c1a7
+  sha256: b1d2c56615313f499e714aa3f4b6b2b43be1e1940057fa22234b3fed429abdcb
 
 build:
   entry_points:
