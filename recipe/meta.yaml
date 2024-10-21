@@ -18,11 +18,12 @@ build:
 
 requirements:
   host:
-    - python >=3.7
+    - python >=3.9
     - versioneer
     - pip
+    - setuptools
   run:
-    - python >=3.7
+    - python >=3.9
     - numpy
     - nibabel
     - fslpy
