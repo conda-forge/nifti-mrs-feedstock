@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/nifti_mrs-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/nifti_mrs-{{ version }}.tar.gz
   sha256: f1303b941332091fcc4b37f5861efeca680f491e2fd3d1a55732775dbdb2e7b7
 
 build:
@@ -14,16 +14,16 @@ build:
     - mrs_tools = mrs_tools:main
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
-    - python >=3.9
+    - python {{ python_min }}
     - versioneer
     - pip
     - setuptools
   run:
-    - python >=3.9
+    - python >={{ python_min }}
     - numpy
     - nibabel
     - fslpy
@@ -36,6 +36,7 @@ test:
     - mrs_tools --help
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/wtclarke/nifti_mrs_tools
